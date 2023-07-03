@@ -1,0 +1,165 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+body{
+  font-family: 'Gilroy', sans-serif;
+  background-color: #fff;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1{
+    font-size: 2.5rem;
+    line-height: 42px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #001B5D;
+    margin-bottom: 20px;
+}
+
+.container{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 42px;
+
+}
+
+.intro{
+    display: block;
+    width: 34%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p{
+  font-size: 20px;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.card-item{
+  position: relative;
+  width: 25%;
+  padding: 30px;
+  float: right;
+  height: 18rem;
+  z-index: 2;
+  text-align: -webkit-center;
+}
+
+.matter{
+  width: 50%;
+}
+
+.space-even{
+  margin: 0 0 0 168px;
+}
+
+.card-item:hover .matter{
+  transition: transform .6s ease-in-out;
+  transform: scale(1.1);
+  position: relative;
+}
+
+.card-item:hover .matter-desc{
+  opacity: 1;
+}
+
+.card-item-intro{
+  width: 40%;
+}
+
+
+.matter-desc{
+  transition: opacity .4s ease-in-out;
+  opacity: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+  color: #001B5D;
+  font-size: 1.5rem;
+}
+
+.grey{
+  background-color: #d7d6d6;
+}
+
+.width-50{
+  width: 50%;
+}
+
+@media only screen and (min-width: 601px){
+  .intro{
+    padding: 42px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .intro{
+    width: 85%;
+  }
+
+  .intro{
+    position: relative;
+  }
+
+  .cards{
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin-top: 30px;
+  }
+
+  .card-item{
+    min-width: 50%;
+  }
+
+  .matter{
+    width: 80%;
+  }
+  
+}
